@@ -14,7 +14,7 @@ for i in selection do
 	)
 )
 
--- Doors with out frame
+-- Doors without frame
 for i in selection do
 (
 	i.Panel_Type = 0
