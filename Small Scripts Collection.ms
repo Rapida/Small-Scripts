@@ -40,7 +40,7 @@ for i in selection do
 )
 
 -- Display Bitmap Image in VFB
-tBitmap = "Z:\sceneassets\images\Textures\Colors\lingerie-skin-tone-chart.jpg" --select an bitamFile
+tBitmap = "Z:\sceneassets\images\Textures\Colors\Pittsburgh-Paints-01.gif" --select an bitamFile
 vBit = openBitMap tBitmap --open it
 vBit.width -- now you can access to his properties
 display vBit --display it in VFB
