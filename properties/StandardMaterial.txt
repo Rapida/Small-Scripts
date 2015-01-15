@@ -1,0 +1,86 @@
+Standardmaterial: showproperties
+  .shaderType (Shader_Type) : integer
+  .wire : boolean
+  .twoSided (Two_sided) : boolean
+  .faceMap (Face_Map) : boolean
+  .faceted : boolean
+  .shaderByName (Shader_Name) : string
+  .opacityType (Opacity_Type) : integer
+  .opacity : percent
+  .filterColor (Filter_Color) : RGB color
+  .filterMap (Filter_Map) : texturemap
+  .opacityFallOffType (Falloff_Type) : integer
+  .opacityFallOff (Falloff) : percent
+  .ior (Index_of_Refraction) : float
+  .wireSize (Wire_Size) : float
+  .wireUnits (Wire_Units) : integer
+  .applyReflectionDimming (Apply_Reflection_Dimming) : boolean
+  .dimLevel (Dim_Level) : float
+  .reflectionLevel (Reflection_Level) : float
+  .sampler (Pixel_Sampler) : integer
+  .samplerQuality (Sampler_Quality) : float
+  .samplerEnable (Sampler_Enable) : boolean
+  .samplerAdaptThreshold (Adaptive_Threshold) : float
+  .samplerAdaptOn (Adaptive_On) : boolean
+  .subSampleTextureOn (SubSample_Textures) : boolean
+  .samplerAdvancedOptions (Advanced_Options) : boolean
+  .samplerByName (Sampler_Name) : string
+  .UserParam0 (Optional_Param0) : float
+  .UserParam1 (Optional_Param1) : float
+  .samplerUseGlobal (Use_Global_Settings) : boolean
+  .mapEnables (Map_Enables) : boolean array
+  .maps : texturemap array
+  .mapAmounts (Map_Amounts) : percent array
+  .adTextureLock (Ambient_Diffuse_Texture_Lock) : boolean
+  .ambientMap (alias for maps[0])
+  .ambientMapAmount (alias for mapAmounts[0])
+  .ambientMapEnable (alias for mapEnables[0])
+  .bumpMap (alias for maps[8])
+  .bumpMapAmount (alias for mapAmounts[8])
+  .bumpMapEnable (alias for mapEnables[8])
+  .diffuseMap (alias for maps[1])
+  .diffuseMapAmount (alias for mapAmounts[1])
+  .diffuseMapEnable (alias for mapEnables[1])
+  .displacementMap (alias for maps[11])
+  .displacementMapAmount (alias for mapAmounts[11])
+  .displacementMapEnable (alias for mapEnables[11])
+  .filterMap (alias for maps[7])
+  .filterMapAmount (alias for mapAmounts[7])
+  .filterMapEnable (alias for mapEnables[7])
+  .glossinessMap (alias for maps[4])
+  .glossinessMapAmount (alias for mapAmounts[4])
+  .glossinessMapEnable (alias for mapEnables[4])
+  .opacityMap (alias for maps[6])
+  .opacityMapAmount (alias for mapAmounts[6])
+  .opacityMapEnable (alias for mapEnables[6])
+  .reflectionMap (alias for maps[9])
+  .reflectionMapAmount (alias for mapAmounts[9])
+  .reflectionMapEnable (alias for mapEnables[9])
+  .refractionMap (alias for maps[10])
+  .refractionMapAmount (alias for mapAmounts[10])
+  .refractionMapEnable (alias for mapEnables[10])
+  .selfIllumMap (alias for maps[5])
+  .selfIllumMapAmount (alias for mapAmounts[5])
+  .selfIllumMapEnable (alias for mapEnables[5])
+  .specularLevelMap (alias for maps[3])
+  .specularLevelMapAmount (alias for mapAmounts[3])
+  .specularLevelMapEnable (alias for mapEnables[3])
+  .specularMap (alias for maps[2])
+  .specularMapAmount (alias for mapAmounts[2])
+  .specularMapEnable (alias for mapEnables[2])
+  .noExposureControl : boolean
+  .exposureControlInvertSelfIllum : boolean
+  .exposureControlInvertReflection : boolean
+  .exposureControlInvertRefraction : boolean
+  .ambient (Ambient_Color) : RGB color
+  .diffuse (Diffuse_Color) : RGB color
+  .specular (Specular_Color) : RGB color
+  .adTextureLock (Ambient_Diffuse_Texture_Lock) : boolean
+  .adLock (Ambient_Diffuse_Lock) : boolean
+  .dsLock (Diffuse_Specular_Lock) : boolean
+  .useSelfIllumColor (Use_Self_Illum_Color) : boolean
+  .selfIllumAmount (Self_Illumination) : percent
+  .selfIllumColor (Self_Illum_Color) : RGB color
+  .specularLevel (Specular_Level) : percent
+  .glossiness : percent
+  .soften : float

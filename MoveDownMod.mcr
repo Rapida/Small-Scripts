@@ -26,6 +26,8 @@ macroScript DownMod
 						)
 				)
 				move_down()
-			) else ( max modify mode )
+			)
+			else 
+				( max modify mode )
 		)
 )
