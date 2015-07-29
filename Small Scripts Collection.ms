@@ -200,3 +200,36 @@ spinner multiP "Cost" type: #float
 -- on sound_dd selected i do sound = sound_dd.items [i]
 )
 )
+
+--manipulate submaterials
+mArr = $.material
+for m in mArr do (
+	--m.texmap_reflection_multiplier = (random 12.0 15.0)
+	m.option_traceReflection = on
+	m.option_traceRefraction = off
+	m.hilight_glossiness = (random 0.90 0.95)
+	m.reflection_fresnel = on
+	m.reflection_lockIOR = off
+	m.reflection_ior = (random 2.5 3.6)
+	--m.texmap_diffuse.opacity[2] = (random 10.0 12.0)
+	--m.texmap_bump_on = off
+)
+
+-- search and manipulate all objects
+for o in objects do
+(
+	scl = superClassOf o
+	cl = classOf o
+	if scl == GeometryClass and cl != Targetobject then
+	(
+		mName = o.material.name
+		if mName == "Material #36" do
+		(
+			modArr = o.modifiers
+			for m in modArr do
+			(
+				if classOf m == Uvwmap do m.height = m.length = m.width = 50
+			)
+		)
+	)
+)
